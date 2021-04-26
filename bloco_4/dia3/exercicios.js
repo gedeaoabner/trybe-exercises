@@ -59,4 +59,29 @@ for (indexLinha = 0; indexLinha < valor; indexLinha += 1) {
     posicao -= 1;
 };
 
+// exercicio 4
+let valor = 7;
+let asterisco = "*";
+let espaco = " ";
+let linha = "";
+let atual = 1;
+let calculo = 0;
+
+for (indexLinha = 0; indexLinha < valor; indexLinha += 1) {
+    calculo = (valor - atual) / 2;
+    for (indexColuna = 0; indexColuna < valor; indexColuna += 1) {
+        if (indexColuna < calculo) {
+            linha = linha + espaco;
+        } else if (indexColuna == calculo) {
+            for (indexAsterisco = 0; indexAsterisco < atual; indexAsterisco += 1) {
+                linha = linha + asterisco;
+            };
+        } else {
+            linha = linha + espaco;
+        };
+    };
+    atual = atual += 2;
+    console.log(linha);
+    linha = "";
+};
 
