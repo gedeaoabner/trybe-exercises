@@ -64,3 +64,24 @@ console.log(nomes(["andre", "maria", "joao", "isabella", "mauro", "ana"]));
 
 // exercicio 5
 
+function moda(inteiros) {
+    let conta = 1;
+    let compara = {};
+    let maximo = 0;
+
+    for (index = 0; index < inteiros.length; index += 1) {
+        let atual = inteiros[index];
+        if (compara[atual] == null) {
+            compara[atual] = 1;
+        } else {
+            compara[atual] += 1;
+        }
+        if (compara[atual] > conta) {
+            maximo = atual
+            conta = compara[atual];
+        }
+    };
+    return maximo;
+};
+
+console.log(moda([2, 3, 2, 5, 8, 2, 3]));
