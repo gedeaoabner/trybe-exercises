@@ -47,3 +47,20 @@ function menor(inteiros) {
 
 console.log(menor([2, 4, 6, 7, 10, 0, -3]));
 
+// exercicio 4
+
+function nomes(lista) {
+    let maior = 0;
+    let tamanho = lista.length; 
+    for (let index = 0; index < tamanho; index += 1) {
+        if (lista[index].length > maior) { //pega o tamanho total da string e confere se é o maior.
+            maior = lista[index].length; 
+        };
+    };
+    return maior;
+};
+
+console.log(nomes(["andre", "maria", "joao", "isabella", "mauro", "ana"]));
+
+// exercicio 5
+
