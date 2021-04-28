@@ -30,3 +30,20 @@ function maior(inteiros) {
 
 console.log(maior([2, 4, 6, 7, 10, 0, -3]));
 
+// exercicio 3
+
+function menor(inteiros) {
+    let tamanho = inteiros.length;
+    let menorNumero = 999;
+    let menorIndex = 0;
+    for (index = 0; index <= tamanho; index += 1) {
+        if (menorNumero > inteiros[index]) {
+            menorNumero = inteiros[index];
+            menorIndex = inteiros.indexOf(menorNumero);
+        };
+    };
+    return menorIndex;
+};
+
+console.log(menor([2, 4, 6, 7, 10, 0, -3]));
+
