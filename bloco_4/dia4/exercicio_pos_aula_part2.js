@@ -85,3 +85,19 @@ function moda(inteiros) {
 };
 
 console.log(moda([2, 3, 2, 5, 8, 2, 3]));
+
+// exercicio 6
+
+function somaTotal(valor) {
+    let atual = 1;
+    let soma = 0;
+    for (index = 0; index <= valor; index += 1) {
+        if (atual <= valor) {
+            soma = soma += atual;
+            atual += 1;
+        };
+    };
+    return soma;
+};
+
+    console.log(somaTotal(5));
