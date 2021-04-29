@@ -100,4 +100,7 @@ function somaTotal(valor) {
     return soma;
 };
 
-    console.log(somaTotal(5));
+console.log(somaTotal(5));
+
+// exercicio 7
+
