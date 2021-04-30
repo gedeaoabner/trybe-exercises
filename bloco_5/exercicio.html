@@ -19,5 +19,30 @@
       <div id="quartoEUltimoFilho"></div>
     </div>
   </div>
+
+  <script>
+    /*
+      parentNode : retorna o nó pai.
+      parentElement : retorna o elemento pai.
+      childNodes : retorna um HTMLCollection com todos os nós filhos
+      children : retorna um HTMLCollection com todos os elementos filhos
+      firstChild : retorna o primeiro nó filho
+      firstElementChild : retorna o primeiro elemento filho
+      lastChild : retorna o último nó filho
+      lastElementChild : retorna o último elemento filho
+      nextSibling : retorna o próximo nó.
+      nextElementSibling : retorna o próximo elemento.
+      previousSibling : retorna o nó anterior.
+      previousElementSibling : retorna o elemento anterior.
+    */
+
+      console.log(document.querySelector("#elementoOndeVoceEsta").parentNode);
+      document.querySelector("#elementoOndeVoceEsta").parentNode.style.color = "red";
+      console.log(document.querySelector("#elementoOndeVoceEsta").childNodes[1].innerText = "Flamengo");
+      console.log(document.querySelector("#pai").childNodes[1]);
+
+      //console.log();
+  </script>
+  
 </body>
 </html>
