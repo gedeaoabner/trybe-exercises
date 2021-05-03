@@ -19,6 +19,28 @@ a cor do mesmo;
 Segue abaixo um exemplo do uso de event.target:
 */
 
+let divTech = document.getElementById("divTres");
+let techAtual;
+divTech.addEventListener("click", alteraTech);
+function alteraTech() {
+  techAtual = document.getElementsByClassName("tech")[0];
+  techAtual.setAttribute("class", "");
+  console.log(techAtual);
+  divTech.setAttribute("class", "tech");
+}
+
+let h3click = document.getElementById("mySpotrybefy");
+h3click.addEventListener("dblclick", clickH3);
+function clickH3() {
+  window.open("https://www.google.com");
+}
+
+let mouseOver = document.getElementById("mySpotrybefy");
+mouseOver.addEventListener("mouseover", meuPortfolio);
+function meuPortfolio() {
+  window.open("https://gedeaoabner.github.io/");
+}
+
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
   event.target.innerText = 'Opção reiniciada';
