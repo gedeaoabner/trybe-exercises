@@ -18,6 +18,15 @@ console.log(dias);
 for (let index = 0; index < dezDaysList.length; index += 1) {
   let hoje = dezDaysList[index];
   let criacao = document.createElement("li");
+  criacao.setAttribute("class", "day");
+  if (hoje === 24 || hoje === 25 || hoje === 31) {
+    // console.log("alow");
+    criacao.className += " holiday";
+    //criacao.setAttribute("class", "holiday");
+  }
+  if (hoje === 4 || hoje === 11 || hoje === 18 || hoje === 25) {
+    criacao.className += " friday";
+  }
   criacao.innerText = hoje;
   dias.appendChild(criacao);
 }
