@@ -13,6 +13,7 @@ function createDaysOfTheWeek() {
 
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
+// exercicio 1
 function diasDoMes() {
   let dias = document.querySelector("#days");
   console.log(dias);
@@ -31,6 +32,7 @@ function diasDoMes() {
   }
 }
 
+// exercicio 2
 function isFeriado(feriado) {
   let task = document.querySelector(".tasks-container");
   console.log(task);
@@ -45,4 +47,27 @@ isFeriado("Feriado");
 createDaysOfTheWeek();
 diasDoMes();
 
-// Escreva seu código abaixo.
+// exercicio 3
+let botao = document.getElementById("btn-holiday");
+botao.setAttribute("class", "click");
+botao = document.querySelector(".click");
+botao.addEventListener("click", clicou);
+
+function clicou() {
+  let diaFeriado = document.querySelectorAll(".holiday");
+  console.log(diaFeriado);
+  for (let index = 0; index < diaFeriado.length; index += 1) {
+    diaFeriado[index].style.backgroundColor = "navy";
+  }
+  botao.setAttribute("class", "clicadoAntes");
+  let segundoClick = document.querySelector(".clicadoAntes");
+  segundoClick.addEventListener("click", clicadoAntes);
+}
+
+function clicadoAntes(){
+  let diaFeriado = document.querySelectorAll(".holiday");
+  for (let index = 0; index < diaFeriado.length; index += 1) {
+    diaFeriado[index].style.backgroundColor = "rgb(238,238,238)";
+  }
+  botao.setAttribute("class", "click");
+}
