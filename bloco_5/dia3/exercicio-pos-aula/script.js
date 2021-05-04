@@ -74,7 +74,7 @@ function clicadoAntes(){
 
 // Exercicio 4
 
-function botaoSexta(sextaFeira) {
+function criaBtnSexta(sextaFeira) {
   let botaoLugar = document.querySelector(".buttons-container");
   let botaoSexta = document.createElement("button");
   botaoSexta.setAttribute("id", "btn-friday");
@@ -83,5 +83,13 @@ function botaoSexta(sextaFeira) {
   console.log(botaoLugar);
 
 }
+criaBtnSexta("Sexta-feira");
 
-botaoSexta("Sexta-feira");
+// Exercicio 5
+
+let btnSexta = document.getElementById("btn-friday");
+btnSexta 
+
+function clicaSexta() {
+
+}
