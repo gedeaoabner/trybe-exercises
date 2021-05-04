@@ -35,7 +35,7 @@ function diasDoMes() {
 // exercicio 2
 function isFeriado(feriado) {
   let task = document.querySelector(".tasks-container");
-  console.log(task);
+  // console.log(task);
   let botao = document.createElement("button");
   botao.setAttribute("id", "btn-holiday");
   botao.innerText = feriado;
@@ -55,7 +55,7 @@ botao.addEventListener("click", clicou);
 
 function clicou() {
   let diaFeriado = document.querySelectorAll(".holiday");
-  console.log(diaFeriado);
+  // console.log(diaFeriado);
   for (let index = 0; index < diaFeriado.length; index += 1) {
     diaFeriado[index].style.backgroundColor = "navy";
   }
@@ -71,3 +71,17 @@ function clicadoAntes(){
   }
   botao.setAttribute("class", "click");
 }
+
+// Exercicio 4
+
+function botaoSexta(sextaFeira) {
+  let botaoLugar = document.querySelector(".buttons-container");
+  let botaoSexta = document.createElement("button");
+  botaoSexta.setAttribute("id", "btn-friday");
+  botaoSexta.innerText = sextaFeira;
+  botaoLugar.appendChild(botaoSexta);
+  console.log(botaoLugar);
+
+}
+
+botaoSexta("Sexta-feira");
