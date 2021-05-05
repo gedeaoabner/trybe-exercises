@@ -1,13 +1,13 @@
 function textoCor(cor) {
     let pTexto = document.getElementsByClassName("texto");
     
-    //for (let index in cor) {
-      pTexto.
-      console.log(pTexto);
-    //};
+    for (let index = 0; index < pTexto.length; index += 1) {
+      pTexto[index].style.color = cor;
+      console.log(pTexto[index]);
+    };
   };
   
-  textoCor("navy");
+  
 
 function botao(nomeBotao) {
     let local = document.querySelector("#botoes");
