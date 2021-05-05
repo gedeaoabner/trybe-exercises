@@ -1,10 +1,10 @@
 function textoCor(cor) {
-    let pTexto = document.querySelectorAll(".texto");
+    let pTexto = document.getElementsByClassName("texto");
     
-    for (let index in cor) {
-      pTexto[index].style.color = cor;
-      // console.log(pTexto[index]);
-    };
+    //for (let index in cor) {
+      pTexto.
+      console.log(pTexto);
+    //};
   };
   
   textoCor("navy");
