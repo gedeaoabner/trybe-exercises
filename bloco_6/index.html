@@ -9,12 +9,18 @@
 <body>
     <form action="">
         <label for="email">Preencha seu e-mail:<br>
-            <input type="email" id="email" placeholder="e-mail" required>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required autocomplete="off" autofocus>
         </label>
         <br>
         <label for="senha">Digite sua senha:<br>
-            <input type="password" name="senha" id="senha" required>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
         </label>
+        <br>
+        <label for="lembrar">
+            <input id="lembrar" type="checkbox">Lembre-me
+        </label>    
+        <br>
+        <button id="enviar">Entrar</button>
     </form>
 </body>
 </html>
