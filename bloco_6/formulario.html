@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Formulário</h1>
+    </header>
+    <main class="main-content">
+        <form action="" id="formulario">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="input-nome">Nome:
+                    <input id="input-nome" type="text" name="nome" maxlength="40" placeholder="Nome completo" required>
+                </label>
+                <br>
+                <label for="input-email">Email:
+                    <input id="input-email" type="text" name="email" maxlength="50" placeholder="Email" required>
+                </label>
+                <br>
+                <label for="input-cpf">CPF:
+                    <input id="input-cpf" type="text" name="cpf" maxlength="11" placeholder="cpf" required>
+                </label>
+                <br>
+                <label for="input-endereco">Endereço:
+                    <input id="input-endereco" type="text" name="endereço" maxlength="200" placeholder="Endereço" required>
+                </label>
+                <br>
+                <label for="input-cidade">Cidade:
+                    <input id="input-cidade" type="text" name="cidade" maxlength="28" placeholder="Cidade" required>
+                </label>
+                <br>
+                <label for="input-estado">Estado:
+                    <select name="estado" id="input-estado">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MG">Minas Gerais</option>
+                    </select>
+                </label>
+                <br>
+                <label for="input-casa">
+                    <input id="input-casa" type="radio" name="moradia" checked value="Casa">
+                    Casa
+                </label>
+                <label for="input-apartamento">
+                    <input id="input-apartamento" type="radio" name="moradia" value="Apartamento">
+                    Apartamento
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Informações de Trabalho</legend>
+                <label for="input-curriculo">Curriculo:
+                    <textarea id="input-curriculo" type="text" name="curriculo" cols="30" rows="5" maxlength="1000" required>Digite um RESUMO do seu currículo
+                    </textarea>
+                </label>
+                <br>
+                <label for="input-cargo">Cargo:
+                    <input id="input-cargo" type="text" name="cargo" maxlength="40" placeholder="Cargo" required>
+                </label>
+                <br>
+                <label for="input-descricaoCargo">Descrição do Cargo:
+                    <input id="input-descricaoCargo" type="text" name="endereço" maxlength="200" placeholder="Descrição do Cargo" required>
+                </label>
+                <br>
+                <label for="input-data">Data:
+                    <input id="input-data" type="date" name="data" maxlength="200" placeholder="Data" required>
+                </label>
+                
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
