@@ -14,19 +14,29 @@ body {
   display: flex;
 }
 
+/*faz com que o NAV ocupe todo o tamanho restante*/
+.header-container nav:nth-of-type(1) {
+  flex-grow: 3;
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
+  flex-basis: 268px;
+  order: 0;
 }
 
 .menu-container {
   display: flex;
+  flex-basis: 500px;
+  order: 1;
 }
 
 .menu-container ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  align-self: center;
 }
 
 .menu-container li {
