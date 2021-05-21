@@ -53,7 +53,18 @@ customerInfo(order);
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias.
   // Olá Luiz Silva, o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é R$ 50,00.
+  order.name = 'Luiz Silva'
+  order.order.pizza.muzzarella = {amount: 1, price: 20}
+  order.order.pizza.calabresa = {amount: 1, price: 20}
+  const priceMuzzarella = order.order.pizza.muzzarella.price;
+  const priceCalabresa = order.order.pizza.calabresa.price;
+  const priceCoca = order.order.drinks.coke.price;
+  let totalPrice = (priceMuzzarella + priceCalabresa + priceCoca).toFixed(2);
+  order.payment.total = `${totalPrice}`;
+  const preco = order.payment.total;
+  const mensagem = `Olá ${order.name}, o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é R$ ${preco}`;
 
+  console.log(`${mensagem}`);
 }
 
 orderModifier(order);
